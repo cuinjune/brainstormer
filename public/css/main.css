@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(82, 86, 89);
+}
+
+.box-shadow {
+    -webkit-box-shadow: 2px 3px 8px rgb(40, 40, 40);
+    -moz-box-shadow: 2px 3px 8px rgb(40, 40, 40);
+    box-shadow: 2px 3px 8px rgb(40, 40, 40);
+}
+
+#title-container {
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 10%;
+    width: 100%;
+    min-width: 700px;
+    background-color: rgb(50, 54, 57);
+    -webkit-box-shadow: 2px 3px 8px rgb(40, 40, 40);
+    -moz-box-shadow: 2px 3px 8px rgb(40, 40, 40);
+    box-shadow: 2px 3px 8px rgb(40, 40, 40);
+}
+
+#title {
+    width: 40%;
+    color: rgb(239, 239, 239);
+    font-size: 1.8em;
+    font-weight: bold;
+    text-indent: 25px;
+}
+
+textarea {
+    outline: none;
+    padding: 8px 0px 8px 8px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid rgb(174, 174, 174);
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+    resize: none;
+    width: 235px;
+    height: 32px;
+}
+
+#brainstorm {
+    margin-top: 2px;
+    margin-left: 10px;
+    border-radius: 10px;
+    width: 100px;
+    height: 36px;
+    color: rgb(50, 54, 57);
+    outline: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#svg-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
