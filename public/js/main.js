@@ -55,7 +55,7 @@ const drawWords = words => {
     };
 
     const capitalize = word => {
-        return word.charAt(0).toUpperCase() + word.slice(1)
+        return word.replace(/\b\w/g, l => l.toUpperCase());
     }
 
     let colorIndex = 0;
