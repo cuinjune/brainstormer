@@ -59,26 +59,26 @@ const drawWords = words => {
     }
 
     let colorIndex = 0;
-    const getColor = () => {
-        return `hsl(${(colorIndex++ * 25) % 360}, 100%, 80%`;
+    const getColor = (lightness) => {
+        return `hsl(${(colorIndex++ * 25) % 360}, 100%, ${lightness}`;
     }
 
     const mainNode = { id: capitalize(words.word) };
-    addMainNode(mainNode, mainNodeSize, getColor(), "20px");
+    addMainNode(mainNode, mainNodeSize, getColor("78%"), "20px");
     mainNode.fx = width / 2;
     mainNode.fy = height / 2;
 
     for (const c1 of words.children) {
         const childNode1 = { id: capitalize(c1.word) };
-        addChildNode(mainNode, childNode1, mainNodeSize * 0.6, getColor(), "12px", 300);
+        addChildNode(mainNode, childNode1, mainNodeSize * 0.6, getColor("80%"), "12px", 300);
 
         for (const c2 of c1.children) {
             const childNode2 = { id: capitalize(c2.word) };
-            addChildNode(childNode1, childNode2, mainNodeSize * 0.6 * 0.6, getColor(), "8px", 200);
+            addChildNode(childNode1, childNode2, mainNodeSize * 0.6 * 0.6, getColor("82%"), "8px", 200);
 
             for (const c3 of c2.children) {
                 const childNode3 = { id: capitalize(c3.word) };
-                addChildNode(childNode2, childNode3, mainNodeSize * 0.6 * 0.6 * 0.6, getColor(), "5px", 100);
+                addChildNode(childNode2, childNode3, mainNodeSize * 0.6 * 0.6 * 0.6, getColor("84%"), "5px", 100);
             }
         }
     }
@@ -106,14 +106,14 @@ const drawWords = words => {
         .data(links)
         .enter()
         .append("line")
-        .attr("stroke", "gray");
+        .attr("stroke", "rgb(230, 230, 230)");
 
     const circles = svg
         .selectAll("circle")
         .data(nodes)
         .enter()
         .append("circle")
-        .attr("fill", (node) => node.color || "gray")
+        .attr("fill", (node) => node.color || "rgb(230, 230, 230)")
         .attr("r", (node) => node.size)
         .call(dragInteraction);
 

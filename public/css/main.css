@@ -25,28 +25,51 @@ body {
     box-shadow: 2px 3px 8px rgb(40, 40, 40);
 }
 
-#title-container {
+#header-bar {
     position: fixed;
     z-index: 1000;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     height: 10%;
     width: 100%;
-    min-width: 700px;
     background-color: rgb(50, 54, 57);
     -webkit-box-shadow: 2px 3px 8px rgb(40, 40, 40);
     -moz-box-shadow: 2px 3px 8px rgb(40, 40, 40);
     box-shadow: 2px 3px 8px rgb(40, 40, 40);
 }
 
+#title-container {
+    width: 20%;
+    height: 100%;
+    min-width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #title {
-    width: 40%;
     color: rgb(239, 239, 239);
     font-size: 1.8em;
     font-weight: bold;
-    text-indent: 25px;
+}
+
+#text-area-container {
+    width: 60%;
+    min-width: 345px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#empty-container {
+    width: 20%;
+    min-width: 200px;
 }
 
 textarea {
@@ -63,10 +86,10 @@ textarea {
 
 #brainstorm {
     margin-top: 2px;
-    margin-left: 10px;
+    margin-left: 8px;
     border-radius: 10px;
     width: 100px;
-    height: 36px;
+    height: 35px;
     color: rgb(50, 54, 57);
     outline: none;
     font-size: 14px;
