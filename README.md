@@ -5,7 +5,7 @@
 
 **Brainstormer** is a simple brainstorming web application for quickly exploring various related words given an input word or sentence.
 
-The app uses [D3.js](https://d3js.org/) for visualizing the words in the client side, and it uses Python libraries spaCy and simpleneighbors for finding related words in the [server side](https://github.com/cuinjune/brainstormer-flask). The words are pulled from [List Of English Words](https://github.com/dwyl/english-words).
+The app uses [D3.js](https://d3js.org/) for visualizing the words in the client side, and it uses Python libraries [spaCy](https://spacy.io/) and [simpleneighbors](https://github.com/aparrish/simpleneighbors) for finding related words in the [server side](https://github.com/cuinjune/brainstormer-flask). The words are pulled from [List Of English Words](https://github.com/dwyl/english-words).
 
 Here's the [Live Demo on Heroku](https://brainstormer-app.herokuapp.com/).
 
