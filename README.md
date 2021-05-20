@@ -9,15 +9,14 @@ The app uses [D3.js](https://d3js.org/) for visualizing the words in the client 
 Here's the [Live Demo on Heroku](https://brainstormer-app.herokuapp.com/).
 
 ## Setup
-1. Installation of node.js is required. Follow [this guide](https://github.com/itp-dwd/2020-spring/blob/master/guides/installing-nodejs.md) to install it.
-2. Run the following commands in the Terminal.
+1. You need to have [Python](https://realpython.com/installing-python/) installed on your computer
+2. Run the following commands in the Terminal
 ```
 git clone https://github.com/cuinjune/brainstormer.git
 cd brainstormer
-npm install dependencies
-npm start
+python -m http.server 8080
 ```
-3. Open your web browser and navigate to http://localhost:3000
+3. Open your web browser and navigate to http://localhost:8080
 
 ## Source Code
 * Client & Node.js server (Javascript): https://github.com/cuinjune/brainstormer
