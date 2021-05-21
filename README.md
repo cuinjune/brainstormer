@@ -6,7 +6,7 @@
 
 The app uses [D3.js](https://d3js.org/) for visualizing the words in the client side, and it uses Python libraries [spaCy](https://spacy.io/) and [simpleneighbors](https://github.com/aparrish/simpleneighbors) for finding related words in the server side. The words are pulled from [List Of English Words](https://github.com/dwyl/english-words).
 
-Here's the [Live Demo on Heroku](https://brainstormer-app.herokuapp.com/).
+Here's the [Live Demo on Glitch](https://brain-stormer.glitch.me/).
 
 ## Setup
 1. You need to have [Python](https://realpython.com/installing-python/) installed on your computer
