@@ -19,7 +19,7 @@ python -m http.server 8080
 3. Open your web browser and navigate to http://localhost:8080
 
 ## Source Code
-* Client & Node.js server (Javascript): https://github.com/cuinjune/brainstormer
+* Client server (Javascript): https://github.com/cuinjune/brainstormer
 * Flask server (Python): https://github.com/cuinjune/brainstormer-flask
 
 ## Author
